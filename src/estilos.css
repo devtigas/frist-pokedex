@@ -1,0 +1,178 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	max-width: 1280px;
+	margin: 0 auto;
+	background-image: url("https://i.pinimg.com/originals/19/96/3a/19963a8ba788c4a8dd4780a40a813cac.jpg");
+	color: #333333;
+}
+
+body.modo-escuro {
+	background-color: #212121;
+		max-width: 1280px;
+	margin: 0 auto;
+	color: #f5f5f5;
+	border: 0px solid royalblue;
+	border-radius: 15px;
+	background-image: url("https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/d292390deccce94.png")
+	
+}
+
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	
+}
+
+header .logo,
+header .imagem-botao {
+	width: 30px;
+	transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema {
+	background: none;
+	border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover {
+	transform: scale(1.2);
+	cursor: pointer;
+	
+}
+
+main {
+	padding: 25px;
+}
+
+main .listagem-pokemon {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
+}
+
+main .cartao-pokemon {
+	opacity: 1.0;
+	width: 200px;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	border-radius: 15px;
+	transition: 0.2s ease-in-out;
+	
+	
+}
+
+main .cartao-pokemon:hover {
+	background-color: yellow;
+}
+
+.modo-escuro .cartao-pokemon:hover {
+background-color: tan;
+	opacity: 1.0;
+		border: 10px;
+			border-radius: 10px;
+			
+}
+
+main .cartao-pokemon .informacoes {
+	display: flex;
+	justify-content: space-between;
+	border: 10px solid silver;
+	border-radius: 20px;
+
+}
+
+main .cartao-pokemon .informacoes span {
+	padding: 5px;
+	text-transform: uppercase;
+	font-size: 15pt;
+}
+
+main .cartao-pokemon .gif {
+	width: 90px;
+	height: 90px;
+}
+
+main .cartao-pokemon .tipos {
+	display: flex;
+	gap: 15px;
+}
+
+main .cartao-pokemon .tipo {
+	padding: 8px;
+	border-radius: 10px;
+}
+
+
+.Ghost{
+  background-color: mediumpurple;
+}
+ .Steel{
+    background-color: lightgray;
+  }
+  
+
+.Ice{
+  background-color: steelblue;
+  
+}
+
+.Normal{
+  background-color: lightslategray;
+ 
+  }
+
+.Ground{
+  background-color: goldenrod;
+}
+.Fighting{
+  background-color: wheat;
+}
+
+.Dragon{
+  background-color: darksalmon;
+  
+}
+.Psychic{
+  background-color: plum;
+
+  
+}
+
+.Eletric{
+  background-color: goldenrod;
+}
+
+.Grass {
+	background-color: #7ac74c;
+}
+
+.Poison {
+	background-color: #df67ddfb;
+}
+
+.Fire {
+	background-color: #ee8130;
+}
+
+.Water {
+	background-color: #6390f0;
+}
+
+.Flwing {
+	background-color: lightslategray;
+}
+
+main .descricao {
+	max-height: 80px;
+	overflow-y: scroll;
+	font-size: 14px;
+	padding-right: 10px;
+}
